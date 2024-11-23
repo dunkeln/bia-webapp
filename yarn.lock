@@ -850,6 +850,11 @@ lru-cache@^10.2.0:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.4.3.tgz#410fc8a17b70e598013df257c2446b7f3383f119"
   integrity sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==
 
+lucide-svelte@^0.460.1:
+  version "0.460.1"
+  resolved "https://registry.yarnpkg.com/lucide-svelte/-/lucide-svelte-0.460.1.tgz#cbcaab6f2a506b469509606ee3875fb533b77bb2"
+  integrity sha512-guJjJSeWlKivsEG51Xg41egunBMJcobhDmkLv/NYTXmXyCEwxMf1A+HX7RvDEKiXbXYgtLImih67tI08MSUOkA==
+
 magic-string@^0.30.11, magic-string@^0.30.12, magic-string@^0.30.5:
   version "0.30.13"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.13.tgz#92438e3ff4946cf54f18247c981e5c161c46683c"
@@ -886,6 +891,11 @@ minimatch@^9.0.4:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.1.2.tgz#93a9626ce5e5e66bd4db86849e7515e92340a707"
   integrity sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==
+
+mode-watcher@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/mode-watcher/-/mode-watcher-0.5.0.tgz#bc733a9f05e534cc79f877cb3b5a9ce669cbc717"
+  integrity sha512-5E6fh/aXhAVv+U+DbeM0hCmskQE9u7WSmvnCRijJB/MJu7HtB73sjiCaZ9n1M8QHmzLrBFo8XBAUcWXkDm8Z9A==
 
 mri@^1.1.0:
   version "1.2.0"

@@ -8,6 +8,7 @@ website with `shadcn/ui` to simplify building components.
 ```sh
 git clone git@github.com:dunkeln/www-skeleton.git
 yarn    # to install the packages
+npx shadcn-svelte@latest init       # install the ui library toolkit
 yarn dev
 ```
 
