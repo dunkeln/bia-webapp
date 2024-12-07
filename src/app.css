@@ -37,8 +37,8 @@
   }
  
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 212.2 10.5% 13.2%;
+    --foreground: 210 4.62% 78.51%;
  
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -71,6 +71,7 @@
 @layer base {
   * {
     @apply border-border;
+    @apply font-mono;
   }
   body {
     @apply bg-background text-foreground;
