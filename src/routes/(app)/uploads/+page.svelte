@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Input } from "$lib/components/ui/input/index.js";
+  import ChatBox from  "$lib/components/ChatBox.svelte";
   import { Label } from "$lib/components/ui/label/index.js";
   import Button from "$lib/components/ui/button/button.svelte";
   import { toast } from "svelte-sonner";
@@ -59,3 +60,4 @@
     disabled={statusUploading}>Upload</Button
   >
 </div>
+<ChatBox/>
