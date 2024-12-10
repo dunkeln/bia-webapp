@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script lang="ts">
   // INFO: refer here https://svelte.dev/playground/e546cc5338114301b3f196180ec0abbb?version=3.57.0
   import { Button } from "$lib/components/ui/button/index.js";
@@ -14,10 +15,11 @@
 <script>
   import { onMount } from 'svelte';
   import socketIOClient from 'socket.io-client';
+=======
+>>>>>>> 9029c97 (deleted flask)
 
-  let messages = [];
-  let newMessage = '';
 
+<<<<<<< HEAD
   onMount(() => {
     const socket = socketIOClient('http://127.0.0.1:5000'); // Replace with your Flask app's URL
 
@@ -46,3 +48,5 @@
   <button on:click={sendMessage}>Send</button>
 </div>
 >>>>>>> bfd529e (flask)
+=======
+>>>>>>> 9029c97 (deleted flask)
