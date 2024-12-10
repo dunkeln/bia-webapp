@@ -22,10 +22,10 @@
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
  
-    --secondary: 210 6.1% 12.25% 1;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 6.1% 12.25%;
+    --secondary-foreground: 210 40% 98%;
  
-    --accent: 210 40% 96.1%;
+    --accent: 196 81% 95%;
     --accent-foreground: 222.2 47.4% 11.2%;
  
     --destructive: 0 72.2% 50.6%;
@@ -55,7 +55,7 @@
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
  
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 227.56 17.65% 43.35%;
     --secondary-foreground: 210 40% 98%;
  
     --accent: 217.2 32.6% 17.5%;
