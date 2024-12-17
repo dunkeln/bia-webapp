@@ -34,6 +34,7 @@
 
   type InterviewData = {
     id: string;
+    file_name: string;
     body_language: number;
     eye_contact_with_interviewers: number;
     confidence: number;
@@ -125,6 +126,10 @@
     //   header: "Leadership",
     // }),
     table.column({
+      accessor: ({ file_name }) => file_name,
+      header: "Name",
+    }),
+    table.column({
       accessor: ({ interview_summary }) => interview_summary,
       header: "Summary",
     }),
@@ -200,10 +205,12 @@
       disabled={Object.keys($selectedDataIds).length === 0}
       on:click={() => {
         let idcs = Object.keys($selectedDataIds);
-        let data = idcs.map((idx) => values.at(Number(idx)).id);
-        console.info(data);
+        let data = idcs.map((idx) => ({
+          id: values.at(Number(idx)).id,
+          file_name: values.at(Number(idx)).file_name,
+        }));
         $videoIds = data;
-        toast.success(`ids selected: ${idcs}`);
+        toast.success(`${idcs.length} session(s) selected`);
         goto("/chat");
       }}>Initiate Chat</Button
     >

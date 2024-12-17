@@ -2,16 +2,38 @@
   import { Input } from "$lib/components/ui/input/index.js";
   import { Label } from "$lib/components/ui/label/index.js";
   import Button from "$lib/components/ui/button/button.svelte";
-  import ChatBox from "$lib/components/ChatBox.svelte";
   import { toast } from "svelte-sonner";
   import { uploadFiles } from "$lib/components/uploadService";
-  import { onMount } from "svelte";
 
   import * as Table from "$lib/components/ui/table";
+  import { MousePointerClick } from "lucide-svelte";
   export let data;
   let { videos } = data;
-  let columns = Object.keys(videos[0]);
+  videos = videos.map(({ video_id, button_trigger }) => ({
+    video_id,
+    fetchFn: async () => {
+      const toastID = toast.loading(`analysing ${video_id}`);
 
+      try {
+        console.log("button trigger" + button_trigger);
+        const response = await fetch(button_trigger, { method: "POST" });
+        if (!response.ok) throw new Error("Failed to trigger analysis");
+
+        // Success toast
+        toast.success(`Analysis completed for session ${video_id}`, {
+          id: toastID,
+        });
+      } catch (err) {
+        // Error toast
+        toast.error(`Failed to trigger analysis for session ${video_id}`, {
+          id: toastID,
+        });
+        console.error(err);
+      }
+    },
+  }));
+
+  const columns = ["session", "analyse"];
   let files: FileList | null = null;
   let inputFile: HTMLInputElement;
   let statusUploading = false;
@@ -33,7 +55,7 @@
       if (response.success) {
         toast.success(`${files.length} file(s) uploaded successfully`);
 
-        // Reset file input
+        // INFO: Reset file input
         if (inputFile) {
           inputFile.value = "";
           files = null;
@@ -67,9 +89,12 @@
       <Table.Body>
         {#each videos as video}
           <Table.Row>
-            {#each columns as column}
-              <Table.Cell>{video[column]}</Table.Cell>
-            {/each}
+            <Table.Cell>{video.video_id}</Table.Cell>
+            <Table.Cell>
+              <Button variant="ghost" on:click={() => video.fetchFn()}>
+                <MousePointerClick />
+              </Button>
+            </Table.Cell>
           </Table.Row>
         {/each}
       </Table.Body>
@@ -94,4 +119,3 @@
     >
   </div>
 </div>
-<!-- <ChatBox /> -->
