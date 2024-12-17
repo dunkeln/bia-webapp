@@ -6,7 +6,7 @@ interface UploadResponse {
 
 export async function uploadFiles(formData: FormData): Promise<UploadResponse> {
   try {
-    const response = await fetch('/api/upload', {
+    const response = await fetch('/api/engine/video', {
       method: 'POST',
       body: formData
     });

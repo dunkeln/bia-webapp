@@ -626,6 +626,11 @@ aria-query@^5.3.1:
   resolved "https://registry.npmjs.org/aria-query/-/aria-query-5.3.2.tgz"
   integrity sha512-COROpnaoap1E2F000S62r6A60uHZnmlvomhfyT2DlTcrY1OrBKn2UhH7qn5wTC9zMvD0AY7csdPSNwKP+7WiQw==
 
+asynckit@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+  integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
+
 autoprefixer@^10.4.20:
   version "10.4.20"
   resolved "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.20.tgz"
@@ -655,7 +660,7 @@ binary-extensions@^2.0.0:
 
 bits-ui@^0.21.16:
   version "0.21.16"
-  resolved "https://registry.npmjs.org/bits-ui/-/bits-ui-0.21.16.tgz"
+  resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-0.21.16.tgz#cec1a93d79b25555e89747999630af93fab6b6e1"
   integrity sha512-XFZ7/bK7j/K+5iktxX/ZpmoFHjYjpPzP5EOO/4bWiaFg5TG1iMcfjDhlBTQnJxD6BoVoHuqeZPHZvaTgF4Iv3Q==
   dependencies:
     "@internationalized/date" "^3.5.1"
@@ -735,6 +740,13 @@ color-name@~1.1.4:
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+combined-stream@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
+  integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  dependencies:
+    delayed-stream "~1.0.0"
+
 commander@^4.0.0:
   version "4.1.1"
   resolved "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz"
@@ -775,6 +787,11 @@ deepmerge@^4.2.2, deepmerge@^4.3.1:
   version "4.3.1"
   resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-4.3.1.tgz"
   integrity sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==
+
+delayed-stream@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
 
 dequal@^2.0.3:
   version "2.0.3"
@@ -912,6 +929,15 @@ foreground-child@^3.1.0:
   dependencies:
     cross-spawn "^7.0.0"
     signal-exit "^4.0.1"
+
+form-data@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.1.tgz#ba1076daaaa5bfd7e99c1a6cb02aa0a5cff90d48"
+  integrity sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
 
 fraction.js@^4.3.7:
   version "4.3.7"
@@ -1160,6 +1186,18 @@ micromatch@^4.0.4, micromatch@^4.0.8:
   dependencies:
     braces "^3.0.3"
     picomatch "^2.3.1"
+
+mime-db@1.52.0:
+  version "1.52.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
+  integrity sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
+
+mime-types@^2.1.12:
+  version "2.1.35"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.35.tgz#381a871b62a734450660ae3deee44813f70d959a"
+  integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
+  dependencies:
+    mime-db "1.52.0"
 
 mini-svg-data-uri@^1.2.3:
   version "1.4.4"
@@ -1585,10 +1623,41 @@ svelte-check@^4.0.0:
     picocolors "^1.0.0"
     sade "^1.7.4"
 
+svelte-headless-table@^0.18.3:
+  version "0.18.3"
+  resolved "https://registry.yarnpkg.com/svelte-headless-table/-/svelte-headless-table-0.18.3.tgz#fd3226a38bfa16590e92b496a239db7f67041fcc"
+  integrity sha512-1zVnqXW0dvn6ZceYa94k+ziK+w5Dj9nlWYTQGXBv2JhM0resj9w7CWpclZK1TJwAALfEeH4InPBPO87L5fr+nQ==
+  dependencies:
+    svelte-keyed "^2.0.0"
+    svelte-render "^2.0.1"
+    svelte-subscribe "^2.0.1"
+
+svelte-keyed@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/svelte-keyed/-/svelte-keyed-2.0.0.tgz#57131f4cfab204e9000197049f70cdb772c0e84b"
+  integrity sha512-7TeEn+QbJC2OJrHiuM0T8vMBkms3DNpTE+Ir+NtnVBnBMA78aL4f1ft9t0Hn/pBbD/TnIXi4YfjFRAgtN+DZ5g==
+
+svelte-radix@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/svelte-radix/-/svelte-radix-2.0.1.tgz#ff5f545cc8539529c083fe780f6ca884374434d3"
+  integrity sha512-YrX44Dj+Rp6YZuPSjdmyd6P8QTkb2NXwySUCZYzjwkP6Cl3dZaTBPPeaSOutP3v3ycQ2XwyNOpyn4p0QcN+uYQ==
+
+svelte-render@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/svelte-render/-/svelte-render-2.0.1.tgz#4c01c66a0e19b9aa10d0a1f87ebbed266886b4cd"
+  integrity sha512-RpB0SurwXm4xhjvHHtjeqMmvd645FURb79GFOotScOSqnKK5vpqBgoBPGC0pp+E/eZgDSQ9rRAdn/+N4ys1mXQ==
+  dependencies:
+    svelte-subscribe "^2.0.0"
+
 svelte-sonner@^0.3.28:
   version "0.3.28"
   resolved "https://registry.yarnpkg.com/svelte-sonner/-/svelte-sonner-0.3.28.tgz#b24b3e7af924d5c50ca2e33cede1382283074abf"
   integrity sha512-K3AmlySeFifF/cKgsYNv5uXqMVNln0NBAacOYgmkQStLa/UoU0LhfAACU6Gr+YYC8bOCHdVmFNoKuDbMEsppJg==
+
+svelte-subscribe@^2.0.0, svelte-subscribe@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/svelte-subscribe/-/svelte-subscribe-2.0.1.tgz#4464991235f85bed347c7423998c38426b123af3"
+  integrity sha512-eKXIjLxB4C7eQWPqKEdxcGfNXm2g/qJ67zmEZK/GigCZMfrTR3m7DPY93R6MX+5uoqM1FRYxl8LZ1oy4URWi2A==
 
 svelte@^5.0.0:
   version "5.2.7"

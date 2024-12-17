@@ -1,0 +1,202 @@
+[
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 8.5,
+      "EyeContactWithInterviewers": 7.8,
+      "ConfidenceLevel": 8.0,
+      "VocabularyAndGrammar": 7.5,
+      "EngagementWithInterviewers": 8.2,
+      "LeadershipTraits": 8.7
+    },
+    "CandidateInformation": {
+      "Gender": "Male",
+      "Attire": "Formal Suit",
+      "NativeEnglishSpeaker": true
+    },
+    "Assessment": {
+      "InterviewSummary": "Candidate demonstrated strong leadership and good communication skills.",
+      "OverallScore": 8.2,
+      "FiveKeyAttributes": "Leadership, Communication, Confidence, Problem-Solving, Adaptability"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 6.5,
+      "EyeContactWithInterviewers": 5.5,
+      "ConfidenceLevel": 6.0,
+      "VocabularyAndGrammar": 5.8,
+      "EngagementWithInterviewers": 6.3,
+      "LeadershipTraits": 5.9
+    },
+    "CandidateInformation": {
+      "Gender": "Female",
+      "Attire": "Business Casual",
+      "NativeEnglishSpeaker": false
+    },
+    "Assessment": {
+      "InterviewSummary": "Candidate displayed moderate communication skills but lacked confidence.",
+      "OverallScore": 6.0,
+      "FiveKeyAttributes": "Communication, Professionalism, Learning Agility, Respect, Collaboration"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 9.2,
+      "EyeContactWithInterviewers": 9.0,
+      "ConfidenceLevel": 9.5,
+      "VocabularyAndGrammar": 8.8,
+      "EngagementWithInterviewers": 9.4,
+      "LeadershipTraits": 9.6
+    },
+    "CandidateInformation": {
+      "Gender": "Non-Binary",
+      "Attire": "Formal Suit",
+      "NativeEnglishSpeaker": true
+    },
+    "Assessment": {
+      "InterviewSummary": "Outstanding performance with exceptional leadership and engagement.",
+      "OverallScore": 9.3,
+      "FiveKeyAttributes": "Leadership, Confidence, Communication, Vision, Influence"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 7.0,
+      "EyeContactWithInterviewers": 6.5,
+      "ConfidenceLevel": 6.8,
+      "VocabularyAndGrammar": 6.2,
+      "EngagementWithInterviewers": 6.5,
+      "LeadershipTraits": 6.9
+    },
+    "CandidateInformation": {
+      "Gender": "Female",
+      "Attire": "Formal Suit",
+      "NativeEnglishSpeaker": true
+    },
+    "Assessment": {
+      "InterviewSummary": "Good communication but lacked depth in responses.",
+      "OverallScore": 6.8,
+      "FiveKeyAttributes": "Communication, Professionalism, Confidence, Adaptability, Collaboration"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 5.5,
+      "EyeContactWithInterviewers": 5.0,
+      "ConfidenceLevel": 4.8,
+      "VocabularyAndGrammar": 5.2,
+      "EngagementWithInterviewers": 5.0,
+      "LeadershipTraits": 4.5
+    },
+    "CandidateInformation": {
+      "Gender": "Male",
+      "Attire": "Casual",
+      "NativeEnglishSpeaker": false
+    },
+    "Assessment": {
+      "InterviewSummary": "Candidate struggled with confidence and articulation.",
+      "OverallScore": 5.0,
+      "FiveKeyAttributes": "Professionalism, Learning Agility, Respect, Collaboration, Punctuality"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 8.0,
+      "EyeContactWithInterviewers": 8.5,
+      "ConfidenceLevel": 7.8,
+      "VocabularyAndGrammar": 7.9,
+      "EngagementWithInterviewers": 8.1,
+      "LeadershipTraits": 8.3
+    },
+    "CandidateInformation": {
+      "Gender": "Female",
+      "Attire": "Formal Suit",
+      "NativeEnglishSpeaker": true
+    },
+    "Assessment": {
+      "InterviewSummary": "Candidate showed strong communication skills and leadership potential.",
+      "OverallScore": 8.1,
+      "FiveKeyAttributes": "Leadership, Communication, Confidence, Professionalism, Vision"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 6.8,
+      "EyeContactWithInterviewers": 6.0,
+      "ConfidenceLevel": 6.5,
+      "VocabularyAndGrammar": 6.3,
+      "EngagementWithInterviewers": 6.5,
+      "LeadershipTraits": 6.8
+    },
+    "CandidateInformation": {
+      "Gender": "Male",
+      "Attire": "Business Casual",
+      "NativeEnglishSpeaker": true
+    },
+    "Assessment": {
+      "InterviewSummary": "Candidate displayed average skills with room for improvement.",
+      "OverallScore": 6.5,
+      "FiveKeyAttributes": "Professionalism, Confidence, Communication, Respect, Teamwork"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 9.0,
+      "EyeContactWithInterviewers": 8.7,
+      "ConfidenceLevel": 8.9,
+      "VocabularyAndGrammar": 8.5,
+      "EngagementWithInterviewers": 9.2,
+      "LeadershipTraits": 9.4
+    },
+    "CandidateInformation": {
+      "Gender": "Female",
+      "Attire": "Formal Suit",
+      "NativeEnglishSpeaker": true
+    },
+    "Assessment": {
+      "InterviewSummary": "Highly engaging and confident candidate with exceptional vocabulary.",
+      "OverallScore": 9.0,
+      "FiveKeyAttributes": "Engagement, Leadership, Confidence, Communication, Vision"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 7.5,
+      "EyeContactWithInterviewers": 7.0,
+      "ConfidenceLevel": 7.3,
+      "VocabularyAndGrammar": 7.2,
+      "EngagementWithInterviewers": 7.0,
+      "LeadershipTraits": 7.1
+    },
+    "CandidateInformation": {
+      "Gender": "Male",
+      "Attire": "Business Casual",
+      "NativeEnglishSpeaker": true
+    },
+    "Assessment": {
+      "InterviewSummary": "Candidate showed consistent performance across all metrics.",
+      "OverallScore": 7.4,
+      "FiveKeyAttributes": "Consistency, Professionalism, Communication, Confidence, Collaboration"
+    }
+  },
+  {
+    "BehavioralMetrics": {
+      "BodyLanguage": 8.8,
+      "EyeContactWithInterviewers": 8.5,
+      "ConfidenceLevel": 9.0,
+      "VocabularyAndGrammar": 8.7,
+      "EngagementWithInterviewers": 8.9,
+      "LeadershipTraits": 9.1
+    },
+    "CandidateInformation": {
+      "Gender": "Non-Binary",
+      "Attire": "Formal Suit",
+      "NativeEnglishSpeaker": true
+    },
+    "Assessment": {
+      "InterviewSummary": "Exceptional performance with strong leadership skills.",
+      "OverallScore": 8.9,
+      "FiveKeyAttributes": "Leadership, Confidence, Engagement, Communication, Professionalism"
+    }
+  }
+]

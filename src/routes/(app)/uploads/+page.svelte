@@ -1,10 +1,16 @@
 <script lang="ts">
   import { Input } from "$lib/components/ui/input/index.js";
-  import ChatBox from  "$lib/components/ChatBox.svelte";
   import { Label } from "$lib/components/ui/label/index.js";
   import Button from "$lib/components/ui/button/button.svelte";
+  import ChatBox from "$lib/components/ChatBox.svelte";
   import { toast } from "svelte-sonner";
   import { uploadFiles } from "$lib/components/uploadService";
+  import { onMount } from "svelte";
+
+  import * as Table from "$lib/components/ui/table";
+  export let data;
+  let { videos } = data;
+  let columns = Object.keys(videos[0]);
 
   let files: FileList | null = null;
   let inputFile: HTMLInputElement;
@@ -42,22 +48,50 @@
       statusUploading = false;
     }
   };
+
+  console.log(videos);
+  console.log(columns);
 </script>
 
-<div class="grid w-full max-w-sm items-center gap-1.5 p-[1.4rem]">
-  <Label for="video">Upload Call</Label>
-  <Input
-    id="video"
-    type="file"
-    multiple
-    accept="video/*"
-    bind:this={inputFile}
-    on:change={(e) => (files = e.currentTarget.files)}
-  />
-  <Button
-    variant="default"
-    on:click={filesUploadHandler}
-    disabled={statusUploading}>Upload</Button
-  >
+<div class="grid w-full items-center gap-3 p-[1.4rem] grid-cols-[60%_40%]">
+  <div class="border-2 rounded-lg shadow-lg">
+    <Table.Root>
+      <Table.Caption>Uploaded Sessions</Table.Caption>
+      <Table.Header>
+        <Table.Row>
+          {#each columns as column}
+            <Table.Head>{column}</Table.Head>
+          {/each}
+        </Table.Row>
+      </Table.Header>
+      <Table.Body>
+        {#each videos as video}
+          <Table.Row>
+            {#each columns as column}
+              <Table.Cell>{video[column]}</Table.Cell>
+            {/each}
+          </Table.Row>
+        {/each}
+      </Table.Body>
+    </Table.Root>
+  </div>
+
+  <div class="shadow-lg p-[.8rem] border-2 rounded-lg">
+    <Label for="video" class="font-light">Upload Interview Session</Label>
+    <Input
+      id="video"
+      type="file"
+      multiple
+      accept="video/*"
+      bind:this={inputFile}
+      on:change={(e) => (files = e.currentTarget.files)}
+    />
+    <Button
+      variant="default"
+      on:click={filesUploadHandler}
+      disabled={statusUploading}
+      class="mt-[.8rem] w-full">Upload</Button
+    >
+  </div>
 </div>
-<ChatBox/>
+<!-- <ChatBox /> -->
